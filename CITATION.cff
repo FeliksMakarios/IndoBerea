@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use IndoBerea, please cite the paper below."
+title: "IndoBerea"
+repository-code: "https://github.com/FeliksMakarios/IndoBerea"
+license: MIT
+authors:
+  - family-names: Samosir
+    given-names: Feliks Victor Parningotan
+    orcid: "https://orcid.org/0009-0006-0364-0275"
+    affiliation: Universitas Pelita Harapan
+  - family-names: Mendrofa
+    given-names: Serius
+    affiliation: Sekolah Tinggi Alkitab Tiranus
+preferred-citation:
+  type: conference-paper
+  title: "IndoBerea: Evolving Semantic Search in Theological Context"
+  authors:
+    - family-names: Samosir
+      given-names: Feliks Victor Parningotan
+      orcid: "https://orcid.org/0009-0006-0364-0275"
+    - family-names: Mendrofa
+      given-names: Serius
+  collection-title: "TODO: conference name"
+  publisher:
+    name: IEEE
+  year: 2024
+  doi: "10.0000/TODO"

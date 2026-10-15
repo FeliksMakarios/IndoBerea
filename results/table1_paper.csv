@@ -1,0 +1,71 @@
+query,rank,ref,score,human_judgment
+dosa manusia,1,Ula 5:18,0.60,1
+dosa manusia,2,Kel 20:13,0.57,1
+dosa manusia,3,Ams 24:9,0.54,1
+dosa manusia,4,Ula 5:19,0.54,1
+dosa manusia,5,Kel 28:13,0.52,1
+dosa manusia,6,Ayb 15:14,0.51,1
+dosa manusia,7,Yoh 6:48,0.51,0
+dosa manusia,8,1Te 5:19,0.51,1
+dosa manusia,9,Hos 13:12,0.50,1
+dosa manusia,10,Luk 20:32,0.50,0
+kasih pada sesama,1,Ibr 13:1,0.66,1
+kasih pada sesama,2,Ibr 13:25,0.62,1
+kasih pada sesama,3,Yud 1:2,0.59,1
+kasih pada sesama,4,Yoh 6:48,0.58,1
+kasih pada sesama,5,Mzm 26:3,0.57,1
+kasih pada sesama,6,Kel 28:13,0.57,1
+kasih pada sesama,7,Mzm 116:15,0.56,1
+kasih pada sesama,8,1Te 5:19,0.56,1
+kasih pada sesama,9,1Te 5:25,0.56,1
+kasih pada sesama,10,1Ko 16:23,0.56,1
+pengharapan dalam tekanan,1,Yoh 6:48,0.59,1
+pengharapan dalam tekanan,2,Mzm 29:7,0.58,1
+pengharapan dalam tekanan,3,1Te 5:19,0.57,1
+pengharapan dalam tekanan,4,1Te 5:17,0.57,1
+pengharapan dalam tekanan,5,Kid 6:12,0.56,0
+pengharapan dalam tekanan,6,Kel 20:13,0.54,1
+pengharapan dalam tekanan,7,Rat 3:26,0.54,1
+pengharapan dalam tekanan,8,Mzm 107:10,0.54,1
+pengharapan dalam tekanan,9,Mzm 29:4,0.53,1
+pengharapan dalam tekanan,10,Mzm 26:11,0.53,1
+tetap bersukacita,1,1Te 5:16,0.82,1
+tetap bersukacita,2,1Te 5:17,0.66,1
+tetap bersukacita,3,Flp 4:4,0.63,1
+tetap bersukacita,4,Flp 3:1,0.63,1
+tetap bersukacita,5,Ams 23:15,0.62,1
+tetap bersukacita,6,Luk 1:14,0.62,1
+tetap bersukacita,7,Rom 12:15,0.61,1
+tetap bersukacita,8,Rom 12:12,0.60,1
+tetap bersukacita,9,Flp 2:18,0.60,1
+tetap bersukacita,10,Mat 5:4,0.60,1
+menantikan waktu Tuhan,1,Rat 3:26,0.67,1
+menantikan waktu Tuhan,2,Kej 49:18,0.67,1
+menantikan waktu Tuhan,3,Mzm 29:7,0.65,1
+menantikan waktu Tuhan,4,Yeh 23:1,0.64,0
+menantikan waktu Tuhan,5,Yoh 6:48,0.64,1
+menantikan waktu Tuhan,6,Mzm 25:21,0.63,1
+menantikan waktu Tuhan,7,Mzm 130:5,0.63,1
+menantikan waktu Tuhan,8,Mzm 29:4,0.62,1
+menantikan waktu Tuhan,9,1Ko 16:23,0.62,1
+menantikan waktu Tuhan,10,Yer 2:1,0.61,0
+mengampuni sesama,1,Ibr 13:1,0.62,1
+mengampuni sesama,2,Ibr 13:25,0.59,1
+mengampuni sesama,3,1Te 5:19,0.58,1
+mengampuni sesama,4,Ula 5:18,0.57,0
+mengampuni sesama,5,Ula 5:17,0.57,1
+mengampuni sesama,6,Yoh 6:48,0.57,1
+mengampuni sesama,7,1Te 5:16,0.55,1
+mengampuni sesama,8,Mzm 116:5,0.55,1
+mengampuni sesama,9,1Yo 4:19,0.55,1
+mengampuni sesama,10,Ams 10:12,0.55,1
+hidup kekal dan hasilnya,1,Flp 1:21,0.62,1
+hidup kekal dan hasilnya,2,Yoh 6:48,0.62,1
+hidup kekal dan hasilnya,3,Gal 1:5,0.59,1
+hidup kekal dan hasilnya,4,Mzm 111:8,0.59,1
+hidup kekal dan hasilnya,5,Mzm 111:3,0.59,1
+hidup kekal dan hasilnya,6,Ams 27:20,0.58,1
+hidup kekal dan hasilnya,7,2Ta 14:2,0.58,1
+hidup kekal dan hasilnya,8,Ams 21:21,0.58,1
+hidup kekal dan hasilnya,9,Ams 3:17,0.57,1
+hidup kekal dan hasilnya,10,Mzm 112:3,0.57,1

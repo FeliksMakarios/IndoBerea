@@ -1,0 +1,9 @@
+build/
+*.csv.zip
+tb.csv
+vmd.csv
+indonesia-bible-tb.zip
+kaggle.json
+.ipynb_checkpoints/
+__pycache__/
+.venv/
