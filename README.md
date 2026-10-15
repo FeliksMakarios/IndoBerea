@@ -2,7 +2,7 @@
 
 Semantic search over the Indonesian Bible (Terjemahan Baru), from the paper
 
-> F. V. P. Samosir and S. Mendrofa, "IndoBerea: Evolving Semantic Search in Theological Context," IEEE, 2024. DOI: TODO
+> F. V. P. Samosir and S. Mendrofa, "IndoBerea: Evolving Semantic Search in Theological Context," in *2023 Eighth International Conference on Informatics and Computing (ICIC)*, IEEE, 2023, pp. 1-6. DOI: [10.1109/ICIC60109.2023.10382053](https://doi.org/10.1109/ICIC60109.2023.10382053)
 
 | | Link |
 |---|---|
@@ -92,20 +92,21 @@ they are public.
 ## Citation
 
 ```bibtex
-@inproceedings{samosir2024indoberea,
+@inproceedings{samosir2023indoberea,
   title     = {IndoBerea: Evolving Semantic Search in Theological Context},
   author    = {Samosir, Feliks Victor Parningotan and Mendrofa, Serius},
-  booktitle = {TODO: conference name},
+  booktitle = {2023 Eighth International Conference on Informatics and Computing (ICIC)},
   publisher = {IEEE},
-  year      = {2024},
-  doi       = {TODO}
+  pages     = {1--6},
+  year      = {2023},
+  doi       = {10.1109/ICIC60109.2023.10382053}
 }
 ```
 
 ## Ringkasan (Bahasa Indonesia)
 
 IndoBerea adalah model pencarian semantik untuk Alkitab Terjemahan Baru. Repositori ini
-menyimpan versi pertama (v1) dari paper IEEE 2024 agar dapat direproduksi. Pelatihan v1 ternyata
+menyimpan versi pertama (v1) dari paper ICIC 2023 (IEEE Xplore) agar dapat direproduksi. Pelatihan v1 ternyata
 tidak mengubah bobot model, sehingga v1 setara dengan IndoBERT dengan *mean pooling*
 (lihat [`docs/known_issue.md`](docs/known_issue.md)). IndoBerea v2 sedang dikembangkan dengan
 benchmark relevansi yang dianotasi beberapa penilai, pencarian tingkat perikop, dan model yang

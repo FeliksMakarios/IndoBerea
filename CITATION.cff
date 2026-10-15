@@ -20,8 +20,10 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0006-0364-0275"
     - family-names: Mendrofa
       given-names: Serius
-  collection-title: "TODO: conference name"
+  collection-title: "2023 Eighth International Conference on Informatics and Computing (ICIC)"
   publisher:
     name: IEEE
-  year: 2024
-  doi: "10.0000/TODO"
+  year: 2023
+  start: "1"
+  end: "6"
+  doi: "10.1109/ICIC60109.2023.10382053"

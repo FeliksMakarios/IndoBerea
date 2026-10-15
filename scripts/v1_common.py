@@ -1,4 +1,4 @@
-"""Shared helpers for rebuilding IndoBerea v1 (Samosir & Mendrofa, IEEE 2024)."""
+"""Shared helpers for rebuilding IndoBerea v1 (Samosir & Mendrofa, ICIC 2023)."""
 import numpy as np
 import pandas as pd
 

@@ -10,13 +10,13 @@ pinned: false
 license: mit
 models:
   - makarios19/IndoBerea-v1
-short_description: Reproduction demo of IndoBerea v1 (IEEE 2024)
+short_description: Reproduction demo of IndoBerea v1 (ICIC 2023)
 ---
 
 # IndoBerea v1
 
 Reproduction demo for *IndoBerea: Evolving Semantic Search in Theological Context*
-(F. V. P. Samosir and S. Mendrofa, IEEE, 2024).
+(F. V. P. Samosir and S. Mendrofa, ICIC 2023, IEEE; https://doi.org/10.1109/ICIC60109.2023.10382053).
 
 - Code, known issue, and research roadmap: https://github.com/FeliksMakarios/IndoBerea
 - Model: https://huggingface.co/makarios19/IndoBerea-v1

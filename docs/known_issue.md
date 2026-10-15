@@ -1,6 +1,6 @@
 # Known issue: the v1 training run did not train the model
 
-**Summary.** The model described in the IEEE 2024 paper is, in practice,
+**Summary.** The model described in the ICIC 2023 paper is, in practice,
 `indobenchmark/indobert-base-p2` with mean pooling. The fine-tuning step on the Indonesian
 Bible did not change the model, so the paper's results are those of an IndoBERT encoder that
 was never trained for sentence similarity.

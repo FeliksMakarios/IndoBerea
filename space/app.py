@@ -65,7 +65,7 @@ INTRO = f"""
 # IndoBerea v1
 
 Demo pencarian semantik ayat Alkitab Terjemahan Baru dari paper
-*IndoBerea: Evolving Semantic Search in Theological Context* (Samosir & Mendrofa, IEEE 2024).
+*IndoBerea: Evolving Semantic Search in Theological Context* ([Samosir & Mendrofa, ICIC 2023](https://doi.org/10.1109/ICIC60109.2023.10382053)).
 
 **Catatan penting.** Pelatihan pada v1 ternyata tidak menghasilkan sinyal belajar, sehingga model ini
 pada dasarnya adalah IndoBERT (`indobenchmark/indobert-base-p2`) dengan *mean pooling*.
