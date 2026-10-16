@@ -2,7 +2,7 @@
 
 Semantic search over the Indonesian Bible (Terjemahan Baru), from the paper
 
-> F. V. P. Samosir and S. Mendrofa, "IndoBerea: Evolving Semantic Search in Theological Context," in *2023 Eighth International Conference on Informatics and Computing (ICIC)*, IEEE, 2023, pp. 1-6. DOI: [10.1109/ICIC60109.2023.10382053](https://doi.org/10.1109/ICIC60109.2023.10382053)
+> F. V. P. Samosir and S. Mendrofa, "IndoBerea: Evolving Semantic Search in Theological Context," in *2023 Eighth International Conference on Informatics and Computing (ICIC)*, IEEE, 2023, pp. 1-6. [IEEE Xplore](https://ieeexplore.ieee.org/document/10382053/), DOI: 10.1109/ICIC60109.2023.10382053
 
 | | Link |
 |---|---|
@@ -114,7 +114,8 @@ they are public.
   publisher = {IEEE},
   pages     = {1--6},
   year      = {2023},
-  doi       = {10.1109/ICIC60109.2023.10382053}
+  doi       = {10.1109/ICIC60109.2023.10382053},
+  url       = {https://ieeexplore.ieee.org/document/10382053/}
 }
 ```
 

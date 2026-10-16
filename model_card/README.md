@@ -18,7 +18,7 @@ Rebuilt model for *IndoBerea: Evolving Semantic Search in Theological Context*
 (F. V. P. Samosir and S. Mendrofa, ICIC 2023, IEEE): semantic search over the Indonesian
 Terjemahan Baru (TB) Bible.
 
-- Paper: https://doi.org/10.1109/ICIC60109.2023.10382053
+- Paper (IEEE Xplore): https://ieeexplore.ieee.org/document/10382053/
 - Results page (static): https://huggingface.co/spaces/makarios19/IndoBerea-v1
 - Code, known issue, and roadmap: https://github.com/FeliksMakarios/IndoBerea
 
@@ -77,6 +77,7 @@ IndoBerea v2, with a relevance benchmark and properly trained retrievers, is in 
   publisher = {IEEE},
   pages     = {1--6},
   year      = {2023},
-  doi       = {10.1109/ICIC60109.2023.10382053}
+  doi       = {10.1109/ICIC60109.2023.10382053},
+  url       = {https://ieeexplore.ieee.org/document/10382053/}
 }
 ```
