@@ -15,7 +15,7 @@ short_description: Precomputed results of IndoBerea v1 (ICIC 2023)
 # IndoBerea v1
 
 Static page showing the results of *IndoBerea: Evolving Semantic Search in Theological Context*
-(F. V. P. Samosir and S. Mendrofa, ICIC 2023, IEEE; https://doi.org/10.1109/ICIC60109.2023.10382053).
+(F. V. P. Samosir and S. Mendrofa, ICIC 2023, IEEE; https://ieeexplore.ieee.org/document/10382053/).
 
 - Code, known issue, and research roadmap: https://github.com/FeliksMakarios/IndoBerea
 - Model: https://huggingface.co/makarios19/IndoBerea-v1
