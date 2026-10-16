@@ -1,15 +1,14 @@
-"""Rebuild IndoBerea v1, check it against the paper, and write the Space index.
+"""Rebuild IndoBerea v1 and check it against the original notebook.
 
 Usage (e.g. in Google Colab, after downloading tb.csv from Kaggle):
     python scripts/build_v1.py --tb-csv tb.csv --out build
 
 Outputs:
     build/model/                  SentenceTransformer model to publish as the v1 model repo
-    build/space_index/            embeddings (float16) and verse references, without verse text
-    build/reproduction_report.md  comparison with the scores in the original notebook
+    build/reproduction.csv        per-row comparison with the original notebook scores
+    build/reproduction_report.md  summary of that comparison
 """
 import argparse
-import json
 import os
 import shutil
 import sys
@@ -70,16 +69,6 @@ def main():
         df["firman"].tolist(), batch_size=args.batch_size, normalize_embeddings=True,
         show_progress_bar=True, convert_to_numpy=True,
     ).astype(np.float32)
-
-    index_dir = os.path.join(args.out, "space_index")
-    os.makedirs(index_dir, exist_ok=True)
-    np.save(os.path.join(index_dir, "embeddings.npy"), emb.astype(np.float16))
-    df[["ref", "usfm", "pasal", "ayat", "dup_group"]].rename(
-        columns={"pasal": "chapter", "ayat": "verse"}
-    ).to_csv(os.path.join(index_dir, "refs.csv"), index=False)
-    with open(os.path.join(index_dir, "meta.json"), "w") as f:
-        json.dump({"model": args.base_model, "pooling": "mean", "normalized": True,
-                   "corpus": "Terjemahan Baru (TB), text not included", "verses": len(df)}, f, indent=2)
 
     rep = reproduce(model, df, emb, args.reference)
     rep.to_csv(os.path.join(args.out, "reproduction.csv"), index=False)

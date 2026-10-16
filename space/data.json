@@ -1,0 +1,710 @@
+{
+ "queries": [
+  {
+   "query": "dosa manusia",
+   "results": [
+    {
+     "rank": 1,
+     "ref": "Ula 5:18",
+     "usfm": "DEU",
+     "chapter": 5,
+     "verse": 18,
+     "score": 0.5973,
+     "human": 1
+    },
+    {
+     "rank": 2,
+     "ref": "Kel 20:13",
+     "usfm": "EXO",
+     "chapter": 20,
+     "verse": 13,
+     "score": 0.5658,
+     "human": 1
+    },
+    {
+     "rank": 3,
+     "ref": "Ams 24:9",
+     "usfm": "PRO",
+     "chapter": 24,
+     "verse": 9,
+     "score": 0.543,
+     "human": 1
+    },
+    {
+     "rank": 4,
+     "ref": "Ula 5:19",
+     "usfm": "DEU",
+     "chapter": 5,
+     "verse": 19,
+     "score": 0.5396,
+     "human": 1
+    },
+    {
+     "rank": 5,
+     "ref": "Kel 28:13",
+     "usfm": "EXO",
+     "chapter": 28,
+     "verse": 13,
+     "score": 0.5158,
+     "human": 1
+    },
+    {
+     "rank": 6,
+     "ref": "Ayb 15:14",
+     "usfm": "JOB",
+     "chapter": 15,
+     "verse": 14,
+     "score": 0.5124,
+     "human": 1
+    },
+    {
+     "rank": 7,
+     "ref": "Yoh 6:48",
+     "usfm": "JHN",
+     "chapter": 6,
+     "verse": 48,
+     "score": 0.5124,
+     "human": 0
+    },
+    {
+     "rank": 8,
+     "ref": "1Te 5:19",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 19,
+     "score": 0.5095,
+     "human": 1
+    },
+    {
+     "rank": 9,
+     "ref": "Hos 13:12",
+     "usfm": "HOS",
+     "chapter": 13,
+     "verse": 12,
+     "score": 0.5043,
+     "human": 1
+    },
+    {
+     "rank": 10,
+     "ref": "Luk 20:32",
+     "usfm": "LUK",
+     "chapter": 20,
+     "verse": 32,
+     "score": 0.5029,
+     "human": 0
+    }
+   ]
+  },
+  {
+   "query": "kasih pada sesama",
+   "results": [
+    {
+     "rank": 1,
+     "ref": "Ibr 13:1",
+     "usfm": "HEB",
+     "chapter": 13,
+     "verse": 1,
+     "score": 0.6633,
+     "human": 1
+    },
+    {
+     "rank": 2,
+     "ref": "Ibr 13:25",
+     "usfm": "HEB",
+     "chapter": 13,
+     "verse": 25,
+     "score": 0.6243,
+     "human": 1
+    },
+    {
+     "rank": 3,
+     "ref": "Yud 1:2",
+     "usfm": "JUD",
+     "chapter": 1,
+     "verse": 2,
+     "score": 0.587,
+     "human": 1
+    },
+    {
+     "rank": 4,
+     "ref": "Yoh 6:48",
+     "usfm": "JHN",
+     "chapter": 6,
+     "verse": 48,
+     "score": 0.5771,
+     "human": 1
+    },
+    {
+     "rank": 5,
+     "ref": "Mzm 26:3",
+     "usfm": "PSA",
+     "chapter": 26,
+     "verse": 3,
+     "score": 0.5731,
+     "human": 1
+    },
+    {
+     "rank": 6,
+     "ref": "Kel 28:13",
+     "usfm": "EXO",
+     "chapter": 28,
+     "verse": 13,
+     "score": 0.5705,
+     "human": 1
+    },
+    {
+     "rank": 7,
+     "ref": "Mzm 116:15",
+     "usfm": "PSA",
+     "chapter": 116,
+     "verse": 15,
+     "score": 0.5617,
+     "human": 1
+    },
+    {
+     "rank": 8,
+     "ref": "1Te 5:19",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 19,
+     "score": 0.5614,
+     "human": 1
+    },
+    {
+     "rank": 9,
+     "ref": "1Te 5:25",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 25,
+     "score": 0.559,
+     "human": 1
+    },
+    {
+     "rank": 10,
+     "ref": "1Ko 16:23",
+     "usfm": "1CO",
+     "chapter": 16,
+     "verse": 23,
+     "score": 0.5567,
+     "human": 1
+    }
+   ]
+  },
+  {
+   "query": "pengharapan dalam tekanan",
+   "results": [
+    {
+     "rank": 1,
+     "ref": "Yoh 6:48",
+     "usfm": "JHN",
+     "chapter": 6,
+     "verse": 48,
+     "score": 0.589,
+     "human": 1
+    },
+    {
+     "rank": 2,
+     "ref": "Mzm 29:7",
+     "usfm": "PSA",
+     "chapter": 29,
+     "verse": 7,
+     "score": 0.5762,
+     "human": 1
+    },
+    {
+     "rank": 3,
+     "ref": "1Te 5:19",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 19,
+     "score": 0.575,
+     "human": 1
+    },
+    {
+     "rank": 4,
+     "ref": "1Te 5:17",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 17,
+     "score": 0.5704,
+     "human": 1
+    },
+    {
+     "rank": 5,
+     "ref": "Kid 6:12",
+     "usfm": "SNG",
+     "chapter": 6,
+     "verse": 12,
+     "score": 0.5618,
+     "human": 0
+    },
+    {
+     "rank": 6,
+     "ref": "Kel 20:13",
+     "usfm": "EXO",
+     "chapter": 20,
+     "verse": 13,
+     "score": 0.5412,
+     "human": 1
+    },
+    {
+     "rank": 7,
+     "ref": "Rat 3:26",
+     "usfm": "LAM",
+     "chapter": 3,
+     "verse": 26,
+     "score": 0.5406,
+     "human": 1
+    },
+    {
+     "rank": 8,
+     "ref": "Mzm 107:10",
+     "usfm": "PSA",
+     "chapter": 107,
+     "verse": 10,
+     "score": 0.5399,
+     "human": 1
+    },
+    {
+     "rank": 9,
+     "ref": "Mzm 29:4",
+     "usfm": "PSA",
+     "chapter": 29,
+     "verse": 4,
+     "score": 0.5271,
+     "human": 1
+    },
+    {
+     "rank": 10,
+     "ref": "Mzm 26:11",
+     "usfm": "PSA",
+     "chapter": 26,
+     "verse": 11,
+     "score": 0.5267,
+     "human": 1
+    }
+   ]
+  },
+  {
+   "query": "tetap bersukacita",
+   "results": [
+    {
+     "rank": 1,
+     "ref": "1Te 5:16",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 16,
+     "score": 0.8153,
+     "human": 1
+    },
+    {
+     "rank": 2,
+     "ref": "1Te 5:17",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 17,
+     "score": 0.6624,
+     "human": 1
+    },
+    {
+     "rank": 3,
+     "ref": "Flp 4:4",
+     "usfm": "PHP",
+     "chapter": 4,
+     "verse": 4,
+     "score": 0.634,
+     "human": 1
+    },
+    {
+     "rank": 4,
+     "ref": "Flp 3:1",
+     "usfm": "PHP",
+     "chapter": 3,
+     "verse": 1,
+     "score": 0.6305,
+     "human": 1
+    },
+    {
+     "rank": 5,
+     "ref": "Ams 23:15",
+     "usfm": "PRO",
+     "chapter": 23,
+     "verse": 15,
+     "score": 0.6199,
+     "human": 1
+    },
+    {
+     "rank": 6,
+     "ref": "Luk 1:14",
+     "usfm": "LUK",
+     "chapter": 1,
+     "verse": 14,
+     "score": 0.6183,
+     "human": 1
+    },
+    {
+     "rank": 7,
+     "ref": "Rom 12:15",
+     "usfm": "ROM",
+     "chapter": 12,
+     "verse": 15,
+     "score": 0.6082,
+     "human": 1
+    },
+    {
+     "rank": 8,
+     "ref": "Rom 12:12",
+     "usfm": "ROM",
+     "chapter": 12,
+     "verse": 12,
+     "score": 0.6002,
+     "human": 1
+    },
+    {
+     "rank": 9,
+     "ref": "Flp 2:18",
+     "usfm": "PHP",
+     "chapter": 2,
+     "verse": 18,
+     "score": 0.5987,
+     "human": 1
+    },
+    {
+     "rank": 10,
+     "ref": "Mat 5:4",
+     "usfm": "MAT",
+     "chapter": 5,
+     "verse": 4,
+     "score": 0.5951,
+     "human": 1
+    }
+   ]
+  },
+  {
+   "query": "menantikan waktu Tuhan",
+   "results": [
+    {
+     "rank": 1,
+     "ref": "Rat 3:26",
+     "usfm": "LAM",
+     "chapter": 3,
+     "verse": 26,
+     "score": 0.6744,
+     "human": 1
+    },
+    {
+     "rank": 2,
+     "ref": "Kej 49:18",
+     "usfm": "GEN",
+     "chapter": 49,
+     "verse": 18,
+     "score": 0.6672,
+     "human": 1
+    },
+    {
+     "rank": 3,
+     "ref": "Mzm 29:7",
+     "usfm": "PSA",
+     "chapter": 29,
+     "verse": 7,
+     "score": 0.6468,
+     "human": 1
+    },
+    {
+     "rank": 4,
+     "ref": "Yeh 23:1",
+     "usfm": "EZK",
+     "chapter": 23,
+     "verse": 1,
+     "score": 0.6379,
+     "human": 0
+    },
+    {
+     "rank": 5,
+     "ref": "Yoh 6:48",
+     "usfm": "JHN",
+     "chapter": 6,
+     "verse": 48,
+     "score": 0.6369,
+     "human": 1
+    },
+    {
+     "rank": 6,
+     "ref": "Mzm 25:21",
+     "usfm": "PSA",
+     "chapter": 25,
+     "verse": 21,
+     "score": 0.6339,
+     "human": 1
+    },
+    {
+     "rank": 7,
+     "ref": "Mzm 130:5",
+     "usfm": "PSA",
+     "chapter": 130,
+     "verse": 5,
+     "score": 0.6336,
+     "human": 1
+    },
+    {
+     "rank": 8,
+     "ref": "Mzm 29:4",
+     "usfm": "PSA",
+     "chapter": 29,
+     "verse": 4,
+     "score": 0.625,
+     "human": 1
+    },
+    {
+     "rank": 9,
+     "ref": "1Ko 16:23",
+     "usfm": "1CO",
+     "chapter": 16,
+     "verse": 23,
+     "score": 0.6245,
+     "human": 1
+    },
+    {
+     "rank": 10,
+     "ref": "Yer 2:1",
+     "usfm": "JER",
+     "chapter": 2,
+     "verse": 1,
+     "score": 0.6148,
+     "human": 0
+    }
+   ]
+  },
+  {
+   "query": "mengampuni sesama",
+   "results": [
+    {
+     "rank": 1,
+     "ref": "Ibr 13:1",
+     "usfm": "HEB",
+     "chapter": 13,
+     "verse": 1,
+     "score": 0.6231,
+     "human": 1
+    },
+    {
+     "rank": 2,
+     "ref": "Ibr 13:25",
+     "usfm": "HEB",
+     "chapter": 13,
+     "verse": 25,
+     "score": 0.5942,
+     "human": 1
+    },
+    {
+     "rank": 3,
+     "ref": "1Te 5:19",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 19,
+     "score": 0.5757,
+     "human": 1
+    },
+    {
+     "rank": 4,
+     "ref": "Ula 5:18",
+     "usfm": "DEU",
+     "chapter": 5,
+     "verse": 18,
+     "score": 0.5741,
+     "human": 0
+    },
+    {
+     "rank": 5,
+     "ref": "Ula 5:17",
+     "usfm": "DEU",
+     "chapter": 5,
+     "verse": 17,
+     "score": 0.5741,
+     "human": 1
+    },
+    {
+     "rank": 6,
+     "ref": "Yoh 6:48",
+     "usfm": "JHN",
+     "chapter": 6,
+     "verse": 48,
+     "score": 0.5719,
+     "human": 1
+    },
+    {
+     "rank": 7,
+     "ref": "1Te 5:16",
+     "usfm": "1TH",
+     "chapter": 5,
+     "verse": 16,
+     "score": 0.5532,
+     "human": 1
+    },
+    {
+     "rank": 8,
+     "ref": "Mzm 116:5",
+     "usfm": "PSA",
+     "chapter": 116,
+     "verse": 5,
+     "score": 0.5492,
+     "human": 1
+    },
+    {
+     "rank": 9,
+     "ref": "1Yo 4:19",
+     "usfm": "1JN",
+     "chapter": 4,
+     "verse": 19,
+     "score": 0.5492,
+     "human": 1
+    },
+    {
+     "rank": 10,
+     "ref": "Ams 10:12",
+     "usfm": "PRO",
+     "chapter": 10,
+     "verse": 12,
+     "score": 0.5488,
+     "human": 1
+    }
+   ]
+  },
+  {
+   "query": "hidup kekal dan hasilnya",
+   "results": [
+    {
+     "rank": 1,
+     "ref": "Flp 1:21",
+     "usfm": "PHP",
+     "chapter": 1,
+     "verse": 21,
+     "score": 0.625,
+     "human": 1
+    },
+    {
+     "rank": 2,
+     "ref": "Yoh 6:48",
+     "usfm": "JHN",
+     "chapter": 6,
+     "verse": 48,
+     "score": 0.6187,
+     "human": 1
+    },
+    {
+     "rank": 3,
+     "ref": "Gal 1:5",
+     "usfm": "GAL",
+     "chapter": 1,
+     "verse": 5,
+     "score": 0.595,
+     "human": 1
+    },
+    {
+     "rank": 4,
+     "ref": "Mzm 111:8",
+     "usfm": "PSA",
+     "chapter": 111,
+     "verse": 8,
+     "score": 0.5901,
+     "human": 1
+    },
+    {
+     "rank": 5,
+     "ref": "Mzm 111:3",
+     "usfm": "PSA",
+     "chapter": 111,
+     "verse": 3,
+     "score": 0.5897,
+     "human": 1
+    },
+    {
+     "rank": 6,
+     "ref": "Ams 27:20",
+     "usfm": "PRO",
+     "chapter": 27,
+     "verse": 20,
+     "score": 0.5791,
+     "human": 1
+    },
+    {
+     "rank": 7,
+     "ref": "2Ta 14:2",
+     "usfm": "2CH",
+     "chapter": 14,
+     "verse": 2,
+     "score": 0.5789,
+     "human": 1
+    },
+    {
+     "rank": 8,
+     "ref": "Ams 21:21",
+     "usfm": "PRO",
+     "chapter": 21,
+     "verse": 21,
+     "score": 0.5774,
+     "human": 1
+    },
+    {
+     "rank": 9,
+     "ref": "Ams 3:17",
+     "usfm": "PRO",
+     "chapter": 3,
+     "verse": 17,
+     "score": 0.571,
+     "human": 1
+    },
+    {
+     "rank": 10,
+     "ref": "Mzm 112:3",
+     "usfm": "PSA",
+     "chapter": 112,
+     "verse": 3,
+     "score": 0.5695,
+     "human": 1
+    }
+   ]
+  }
+ ],
+ "reproduction": {
+  "source": "scripts/build_v1.py run in Google Colab on 2026-10-16 (Tesla T4)",
+  "base_model": "indobenchmark/indobert-base-p2",
+  "pooling": "mean",
+  "verses": 31102,
+  "unique_texts": 30705,
+  "same_rank": 66,
+  "total": 70,
+  "mean_abs_diff": 0.0002,
+  "max_abs_diff": 0.0007,
+  "per_query": {
+   "dosa manusia": {
+    "same_rank": 10,
+    "mean_abs_diff": 0.0002
+   },
+   "kasih pada sesama": {
+    "same_rank": 10,
+    "mean_abs_diff": 0.0002
+   },
+   "pengharapan dalam tekanan": {
+    "same_rank": 9,
+    "mean_abs_diff": 0.0002
+   },
+   "tetap bersukacita": {
+    "same_rank": 10,
+    "mean_abs_diff": 0.0002
+   },
+   "menantikan waktu Tuhan": {
+    "same_rank": 9,
+    "mean_abs_diff": 0.0002
+   },
+   "mengampuni sesama": {
+    "same_rank": 8,
+    "mean_abs_diff": 0.0001
+   },
+   "hidup kekal dan hasilnya": {
+    "same_rank": 10,
+    "mean_abs_diff": 0.0004
+   }
+  }
+ }
+}

@@ -41,8 +41,11 @@ modelling objective was used.
 3. Table I of the paper shows a pattern typical of an encoder not trained for similarity:
    very short verses rank high for unrelated queries. Yoh 6:48 ("Akulah roti hidup") appears
    for 6 of the 7 queries and 1Te 5:19 for 4 of them.
-4. `scripts/build_v1.py` rebuilds IndoBERT with mean pooling and compares its top-10 results
-   and scores with the outputs saved in the original notebook (`results/notebook_scores.csv`).
+4. `scripts/build_v1.py` rebuilds IndoBERT with mean pooling, without any training, and
+   compares it with the outputs saved in the original notebook (`results/notebook_scores.csv`).
+   The largest score difference is 0.0007 and 66 of 70 verses keep their rank
+   (`results/reproduction_report.md`), so the "trained" 2023 model and plain IndoBERT are the same
+   for practical purposes.
 
 ## Other limitations of the v1 evaluation
 
