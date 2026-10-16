@@ -6,7 +6,7 @@ Semantic search over the Indonesian Bible (Terjemahan Baru), from the paper
 
 | | Link |
 |---|---|
-| Demo (Hugging Face Space) | https://huggingface.co/spaces/makarios19/IndoBerea-v1 |
+| Results page (static Hugging Face Space) | https://huggingface.co/spaces/makarios19/IndoBerea-v1 |
 | Model | https://huggingface.co/makarios19/IndoBerea-v1 |
 | Original notebook (2023, outputs removed) | [`notebooks/IndoBerea_original_2023.ipynb`](notebooks/IndoBerea_original_2023.ipynb) |
 | Known issue | [`docs/known_issue.md`](docs/known_issue.md) |
@@ -36,12 +36,12 @@ pip install -r requirements.txt
 # 1. Download tb.csv from Kaggle (needs your own Kaggle API token)
 kaggle datasets download -d williammulianto/indonesia-bible-tb && unzip indonesia-bible-tb.zip
 
-# 2. Rebuild the model, check it against the original notebook, build the Space index
+# 2. Rebuild the model and check it against the original notebook
 python scripts/build_v1.py --tb-csv tb.csv --out build
 cat build/reproduction_report.md
 
-# 3. Optional: publish the model and the Space (needs a Hugging Face write token)
-HF_TOKEN=... python scripts/push_to_hub.py --user makarios19
+# 3. Optional: publish the model, its card, and the static Space (needs a Hugging Face write token)
+HF_TOKEN=... python scripts/push_to_hub.py --user makarios19 --what model card space
 
 # Check the training issue (CPU, a few seconds, no download)
 python scripts/check_batch_hard_loss.py
@@ -53,14 +53,29 @@ python scripts/check_batch_hard_loss.py
 judgments for seven queries); `results/notebook_scores.csv` holds the same results with four
 decimals, taken from the original notebook outputs.
 
+### Reproduction result
+
+Rebuilt in Google Colab on 2026-10-16 ([`results/reproduction_report.md`](results/reproduction_report.md)):
+for the seven queries in the paper, the largest score difference from the 2023 notebook is
+**0.0007** (mean 0.0002), and **66 of 70** verses appear at the same rank. The remaining
+differences are between verses with nearly tied scores.
+
+## Results page (Hugging Face Space)
+
+The [Space](https://huggingface.co/spaces/makarios19/IndoBerea-v1) is a static page with the
+precomputed top-10 results, scores, and human judgments for the seven queries in Table I, plus the
+reproduction summary. It has **no live search**: v1 is kept as a record and a baseline, and live
+search will come with IndoBerea v2. `scripts/make_space_data.py` builds the page data from
+`results/`.
+
 ## Repository layout
 
 ```
 notebooks/   original 2023 notebook (outputs removed) and a Colab notebook to rebuild v1
 scripts/     rebuild, reproduction check, publishing, and the training-issue check
-space/       Hugging Face Space app (Gradio)
+space/       static Hugging Face Space (results page)
 model_card/  model card for the Hugging Face model repo
-results/     Table I of the paper and the original notebook scores
+results/     Table I of the paper, original notebook scores, reproduction result
 docs/        known issue
 ```
 
@@ -68,8 +83,8 @@ docs/        known issue
 
 - Code in this repository: MIT License.
 - Bible text is **not** included. TB is copyrighted by Lembaga Alkitab Indonesia and VMD by
-  its publisher. The Space ships only embeddings and verse references and links each result
-  to an online reader.
+  its publisher. The Space shows only verse references and links each result to an online
+  reader.
 
 ## Roadmap: IndoBerea v2
 
@@ -110,8 +125,8 @@ menyimpan versi pertama (v1) dari paper ICIC 2023 (IEEE Xplore) agar dapat direp
 tidak mengubah bobot model, sehingga v1 setara dengan IndoBERT dengan *mean pooling*
 (lihat [`docs/known_issue.md`](docs/known_issue.md)). IndoBerea v2 sedang dikembangkan dengan
 benchmark relevansi yang dianotasi beberapa penilai, pencarian tingkat perikop, dan model yang
-dilatih dengan benar. Teks Alkitab tidak disertakan karena hak cipta; demo hanya menampilkan
-rujukan ayat beserta tautan untuk membacanya.
+dilatih dengan benar. Teks Alkitab tidak disertakan karena hak cipta. Space v1 berupa halaman
+statis yang hanya menampilkan hasil tujuh kueri di paper, tanpa pencarian langsung.
 
 ## Authors
 

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IndoBerea v1</title>
+<style>
+  :root {
+    --bg: #fbfaf7; --surface: #ffffff; --text: #1f2328; --muted: #5d636b;
+    --border: #e3e0d8; --accent: #3b4a8f; --accent-soft: #e8ebf7;
+    --warn-bg: #fff6e0; --warn-border: #e8c46a; --ok: #2e7d4f; --bad: #b3412f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a; --surface: #1d2024; --text: #e6e6e3; --muted: #a2a7ad;
+      --border: #33373d; --accent: #9fb0ff; --accent-soft: #262c45;
+      --warn-bg: #2f2817; --warn-border: #8a6d2a; --ok: #6cc28f; --bad: #ec8b7a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 12px; }
+  a { color: var(--accent); }
+  .lead { color: var(--muted); margin: 0 0 20px; }
+  .notice { background: var(--warn-bg); border: 1px solid var(--warn-border);
+            border-radius: 10px; padding: 14px 18px; }
+  .notice h2 { margin: 0 0 6px; font-size: 1rem; }
+  .notice ol { margin: 0; padding-left: 20px; }
+  .notice li + li { margin-top: 4px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .chip { border: 1px solid var(--border); background: var(--surface); color: var(--text);
+          border-radius: 999px; padding: 6px 14px; font: inherit; font-size: .95rem; cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent);
+                               color: var(--accent); font-weight: 600; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+          overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; font-size: .85rem; }
+  tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .yes { color: var(--ok); font-weight: 600; }
+  .no { color: var(--bad); font-weight: 600; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 10px 2px 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+  .stat b { display: block; font-size: 1.4rem; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: .88rem; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border);
+           color: var(--muted); font-size: .9rem; }
+  footer ul { padding-left: 20px; margin: 6px 0 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>IndoBerea v1</h1>
+  <p class="lead">
+    Hasil pencarian semantik ayat Alkitab Terjemahan Baru dari paper
+    <a href="https://doi.org/10.1109/ICIC60109.2023.10382053"><em>IndoBerea: Evolving Semantic Search in
+    Theological Context</em></a> (Samosir &amp; Mendrofa, ICIC 2023).
+  </p>
+
+  <section class="notice" aria-labelledby="batasan">
+    <h2 id="batasan">Batasan halaman ini</h2>
+    <ol>
+      <li><strong>Halaman statis.</strong> Hanya menampilkan hasil yang sudah dihitung untuk tujuh kueri di
+        Tabel I paper. Tidak ada pencarian langsung, jadi kueri lain tidak bisa dicoba di sini.</li>
+      <li><strong>Model v1 tidak benar-benar terlatih.</strong> Fungsi loss pada pelatihan v1 tidak menghasilkan
+        gradien, sehingga model ini setara dengan IndoBERT (<code>indobenchmark/indobert-base-p2</code>) dengan
+        <em>mean pooling</em>. Hasil di bawah adalah catatan versi 1 dan pembanding, bukan alat studi Alkitab.
+        <a href="https://github.com/FeliksMakarios/IndoBerea/blob/main/docs/known_issue.md">Penjelasan lengkap</a>.</li>
+      <li><strong>Penilaian relevansi</strong> dibuat oleh penulis paper, tanpa ukuran kesepakatan antar-penilai.</li>
+      <li><strong>Teks ayat tidak ditampilkan</strong> karena hak cipta Terjemahan Baru dipegang Lembaga Alkitab
+        Indonesia. Gunakan tautan untuk membaca ayat beserta pasalnya.</li>
+    </ol>
+    <p class="meta" style="margin-top:10px">IndoBerea v2, dengan benchmark relevansi dan model yang dilatih dengan benar, sedang dikembangkan.</p>
+  </section>
+
+  <h2>Hasil per kueri</h2>
+  <div class="chips" id="chips" role="group" aria-label="Pilih kueri"></div>
+  <div class="card">
+    <table>
+      <thead><tr><th class="num">#</th><th>Ayat</th><th class="num">Skor cosine</th><th>Penilaian</th><th>Baca</th></tr></thead>
+      <tbody id="results"></tbody>
+    </table>
+  </div>
+  <p class="meta" id="query-meta"></p>
+
+  <h2>Ringkasan tujuh kueri</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th>Kueri</th><th class="num">Rata-rata skor</th><th class="num">Proporsi relevan</th></tr></thead>
+      <tbody id="summary"></tbody>
+    </table>
+  </div>
+  <p class="meta" id="repeats"></p>
+
+  <h2>Reproduksi model</h2>
+  <div class="stats" id="repro"></div>
+  <p class="meta">
+    Bobot model asli tahun 2023 hilang. Karena pelatihannya tidak mengubah bobot, model dibangun ulang dari
+    IndoBERT dengan <em>mean pooling</em> lalu dibandingkan dengan skor di notebook asli. Perbedaan urutan
+    terjadi pada ayat yang skornya nyaris sama.
+  </p>
+
+  <footer>
+    Tautan:
+    <ul>
+      <li>Kode, penjelasan masalah, dan rencana v2: <a href="https://github.com/FeliksMakarios/IndoBerea">github.com/FeliksMakarios/IndoBerea</a></li>
+      <li>Model: <a href="https://huggingface.co/makarios19/IndoBerea-v1">huggingface.co/makarios19/IndoBerea-v1</a></li>
+      <li>Paper: <a href="https://doi.org/10.1109/ICIC60109.2023.10382053">doi.org/10.1109/ICIC60109.2023.10382053</a></li>
+    </ul>
+    Tautan baca mengarah ke Alkitab Terjemahan Baru di bible.com (YouVersion).
+  </footer>
+</main>
+
+<script>
+const VERSE_URL = (r) => `https://www.bible.com/bible/306/${r.usfm}.${r.chapter}.${r.verse}.TB`;
+const CHAPTER_URL = (r) => `https://www.bible.com/bible/306/${r.usfm}.${r.chapter}.TB`;
+const fmt = (x, d) => x.toLocaleString("id-ID", { minimumFractionDigits: d, maximumFractionDigits: d });
+const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
+
+function el(tag, attrs = {}, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") node.className = v; else node.setAttribute(k, v);
+  }
+  for (const c of children) node.append(c);
+  return node;
+}
+
+function showQuery(data, index) {
+  const q = data.queries[index];
+  document.querySelectorAll(".chip").forEach((c, i) => c.setAttribute("aria-pressed", String(i === index)));
+  const body = document.getElementById("results");
+  body.replaceChildren(...q.results.map((r) => el("tr", {},
+    el("td", { class: "num" }, String(r.rank)),
+    el("td", {}, r.ref),
+    el("td", { class: "num" }, fmt(r.score, 4)),
+    el("td", { class: r.human ? "yes" : "no" }, r.human ? "Relevan" : "Tidak relevan"),
+    el("td", {},
+      el("a", { href: VERSE_URL(r), target: "_blank", rel: "noopener" }, "ayat"), " · ",
+      el("a", { href: CHAPTER_URL(r), target: "_blank", rel: "noopener" }, "pasal")),
+  )));
+  const relevant = q.results.filter((r) => r.human).length;
+  document.getElementById("query-meta").textContent =
+    `Kueri "${q.query}": ${relevant} dari ${q.results.length} ayat dinilai relevan; ` +
+    `rata-rata skor ${fmt(mean(q.results.map((r) => r.score)), 3)}.`;
+}
+
+function render(data) {
+  const chips = document.getElementById("chips");
+  data.queries.forEach((q, i) => {
+    const b = el("button", { class: "chip", type: "button", "aria-pressed": "false" }, q.query);
+    b.addEventListener("click", () => showQuery(data, i));
+    chips.append(b);
+  });
+  showQuery(data, 0);
+
+  document.getElementById("summary").replaceChildren(...data.queries.map((q) => el("tr", {},
+    el("td", {}, q.query),
+    el("td", { class: "num" }, fmt(mean(q.results.map((r) => r.score)), 3)),
+    el("td", { class: "num" }, fmt(mean(q.results.map((r) => r.human)), 1)),
+  )));
+
+  // Verses that show up for many unrelated queries: a symptom of the untrained encoder.
+  const counts = {};
+  data.queries.forEach((q) => q.results.forEach((r) => { counts[r.ref] = (counts[r.ref] || 0) + 1; }));
+  const repeated = Object.entries(counts).filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]);
+  if (repeated.length) {
+    document.getElementById("repeats").textContent =
+      "Ayat yang muncul di banyak kueri berbeda: " +
+      repeated.map(([ref, n]) => `${ref} (${n} dari ${data.queries.length} kueri)`).join(", ") +
+      ". Pola ini khas model yang belum dilatih untuk kemiripan kalimat: ayat pendek muncul untuk kueri yang tidak berkaitan.";
+  }
+
+  const rep = data.reproduction;
+  document.getElementById("repro").replaceChildren(
+    el("div", { class: "stat" }, el("b", {}, `${rep.same_rank}/${rep.total}`), el("span", {}, "posisi ayat sama dengan notebook asli")),
+    el("div", { class: "stat" }, el("b", {}, fmt(rep.max_abs_diff, 4)), el("span", {}, "selisih skor terbesar")),
+    el("div", { class: "stat" }, el("b", {}, fmt(rep.mean_abs_diff, 4)), el("span", {}, "rata-rata selisih skor")),
+  );
+}
+
+fetch("data.json")
+  .then((r) => r.json())
+  .then(render)
+  .catch(() => {
+    document.getElementById("results").replaceChildren(
+      el("tr", {}, el("td", { colspan: "5" }, "Data gagal dimuat.")));
+  });
+</script>
+</body>
+</html>

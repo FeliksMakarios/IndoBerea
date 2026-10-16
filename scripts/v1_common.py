@@ -30,7 +30,9 @@ def build_model(base_model=BASE_MODEL):
     from sentence_transformers import SentenceTransformer, models
 
     transformer = models.Transformer(base_model)
-    pooling = models.Pooling(transformer.get_word_embedding_dimension(), pooling_mode="mean")
+    get_dim = getattr(transformer, "get_embedding_dimension", None) or transformer.get_word_embedding_dimension
+    dim = get_dim()
+    pooling = models.Pooling(dim, pooling_mode="mean")
     return SentenceTransformer(modules=[transformer, pooling])
 
 

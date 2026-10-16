@@ -1,0 +1,20 @@
+{
+  "source": "scripts/build_v1.py run in Google Colab on 2026-10-16 (Tesla T4)",
+  "base_model": "indobenchmark/indobert-base-p2",
+  "pooling": "mean",
+  "verses": 31102,
+  "unique_texts": 30705,
+  "same_rank": 66,
+  "total": 70,
+  "mean_abs_diff": 0.0002,
+  "max_abs_diff": 0.0007,
+  "per_query": {
+    "dosa manusia": {"same_rank": 10, "mean_abs_diff": 0.0002},
+    "kasih pada sesama": {"same_rank": 10, "mean_abs_diff": 0.0002},
+    "pengharapan dalam tekanan": {"same_rank": 9, "mean_abs_diff": 0.0002},
+    "tetap bersukacita": {"same_rank": 10, "mean_abs_diff": 0.0002},
+    "menantikan waktu Tuhan": {"same_rank": 9, "mean_abs_diff": 0.0002},
+    "mengampuni sesama": {"same_rank": 8, "mean_abs_diff": 0.0001},
+    "hidup kekal dan hasilnya": {"same_rank": 10, "mean_abs_diff": 0.0004}
+  }
+}
